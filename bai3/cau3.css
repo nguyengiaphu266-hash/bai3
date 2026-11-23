@@ -1,0 +1,68 @@
+body {
+    font-family: Arial;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.hh-box {
+    width: 220px;
+    height: 230px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hh-box:hover {
+    box-shadow: 0 0 10px gray;
+}
+
+.hh-box-name {
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+hh-box-image {
+    width: 150px;
+    height: 130px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+}
+
+.hh-box-price {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hh-box-actions {
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hh-box-actions img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+.hh-box-icon {
+    width: 60px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
